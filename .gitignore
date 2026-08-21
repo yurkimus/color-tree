@@ -2,7 +2,9 @@
 /node_modules
 
 # neo4j bind mounts (compose creates these; binary state, not source)
-/database
+# ...but keep database/import — it holds our seed CSV, which is source
+/database/*
+!/database/import/
 
 # holds NEO4J_PASSWORD
 .env
