@@ -1,59 +1,63 @@
+**English** · [Русский](README.ru.md)
+
 # color-tree
 
-Имя репозитория — от **цветового дерева** Манселла. В 1902 году Манселл пришёл к образу
-«дерева» из срезов постоянного тона, ставшему основой его первого атласа, а во втором
-издании *A Color Notation* (1913) представил свою трёхмерную систему именно в этой
-форме. В немецкой традиции образ закрепился как **Farbbaum**, во французской — как
-*arbre des couleurs*.
+The repository is named after Munsell's **color tree**. In 1902 Munsell arrived at the
+image of a "tree" formed from slices of constant hue, which became the basis of his first
+atlas; in the second edition of *A Color Notation* (1913) he presented his
+three-dimensional system in exactly this form. The German tradition fixed the image as
+**Farbbaum**, the French as *arbre des couleurs*.
 
-Устройство дерева:
+How the tree is built:
 
-- **ствол** — серая (нейтральная) ось, снизу вверх от чёрного к белому (Value);
-- **ветви** — ряды цветов одного тона (Hue), растущие в стороны от ствола;
-- **длина ветви** — насыщенность (Chroma), и ветви **разной длины**: у одних тонов и
-  светлот достижимая насыщенность больше, чем у других. Именно поэтому тело Манселла
-  бугристое, а не правильный цилиндр.
+- **trunk** — the gray (neutral) axis, bottom to top, black to white (Value);
+- **branches** — series of colors of a single hue (Hue), growing sideways from the trunk;
+- **branch length** — chroma (Chroma), and the branches are of **different lengths**: for
+  some hues and values the achievable chroma is greater than for others. This is exactly
+  why the Munsell solid is lumpy, not a regular cylinder.
 
-Честная оговорка о наследии. Сама идея трёхмерного цветового тела — **не** изобретение
-Манселла: до него были двойная пирамида Майера (1758), пирамида Ламберта (1772),
-**сфера Рунге (1810)** и полусфера Шеврёля (1839). Манселл знал предшественников (изучал
-Руда, испытывал влияние Шеврёля) и сам начинал со **сферы** (1900). Его собственный
-вклад — не форма как таковая, а **принцип перцептивной равномерности** (равные шаги для
-глаза, из-за чего форма и вышла неправильной), **образ дерева** как выражение этой
-неправильности и **нотация `H V/C`**. Не с чистого листа, но с оригинальным ядром.
+An honest note on the legacy. The very idea of a three-dimensional color solid is **not**
+Munsell's invention: before him came Mayer's double pyramid (1758), Lambert's pyramid
+(1772), **Runge's sphere (1810)** and Chevreul's hemisphere (1839). Munsell knew his
+predecessors (he studied Rood and was influenced by Chevreul) and himself began with a
+**sphere** (1900). His own contribution is not the shape as such, but the **principle of
+perceptual uniformity** (equal steps for the eye, which is why the shape came out
+irregular), the **tree image** as an expression of that irregularity, and the **`H V/C`
+notation**. Not from a blank slate, but with an original core.
 
-Источники: [Munsell-Farbsystem (нем. Wikipedia)](https://de.wikipedia.org/wiki/Munsell-Farbsystem) ·
+Sources: [Munsell-Farbsystem (German Wikipedia)](https://de.wikipedia.org/wiki/Munsell-Farbsystem) ·
 [Ordering Colour: Albert Henry Munsell — Eclectic Light](https://eclecticlight.co/2018/06/28/ordering-colour-albert-henry-munsell-1858-1918/) ·
 [Nickerson. History of the Munsell Color System (JOSA 30)](https://en.wikisource.org/wiki/Journal_of_the_Optical_Society_of_America/Volume_30/Issue_12/History_of_the_Munsell_Color_System)
 
-# Хронология
+# Timeline
 
-Систематика Манселла и ISCC-NBS по датам. Источник указан у каждой строки:
-**П** — первоисточник (сама статья или публикация), **А** — архивный либо
-институциональный источник, **В** — вторичный. Расхождения вынесены в конец.
+The Munsell / ISCC-NBS system by date. Each row is tagged with its source type:
+**P** — primary source (the paper or publication itself), **A** — archival or
+institutional source, **S** — secondary. Disputed points are collected at the end.
 
-Даты слоёв ISCC-NBS и renotation сверены по трём первоисточникам, прочитанным
-целиком (лежат в [`sources/`](sources/)): RP1239 (Judd & Kelly 1939), Central
-Notations (Kelly 1958) и очерк истории ISCC Эллен Картер (по ISCC News #247, 1977).
+The dates of the ISCC-NBS and renotation layers are cross-checked against three primary
+sources read in full (kept in [`sources/`](sources/)): RP1239 (Judd & Kelly 1939),
+Central Notations (Kelly 1958), and Ellen Carter's ISCC history (after ISCC News #247, 1977).
 
-# Понятия
+# Concepts
 
-### `H V/C` — нотация Манселла
+### `H V/C` — Munsell notation
 
-`5R 4/14` — это тон (Hue) 5R, светлота (Value) 4, насыщенность (Chroma) 14. Числа
-здесь — порядковые ступени шкал, размеченных по восприятию глаза. Какому именно
-физически измеримому цвету соответствует адрес, из самого адреса не следует.
+`5R 4/14` is hue (Hue) 5R, value (Value) 4, chroma (Chroma) 14. The numbers here are
+**ordinal** steps of scales laid out by the perception of the eye. Which physically
+measurable color the address corresponds to does not follow from the address itself.
 
-### `xyY` — измеримое значение цвета
+### `xyY` — a measurable color value
 
-CIE в 1931 году задала способ выразить любой цвет числами — по усреднённому отклику
-глаза 17 наблюдателей с нормальным зрением. В записи `xyY`: `x, y` задают оттенок и
-насыщенность, `Y` — яркость. `xyY` и `XYZ` — одни и те же данные в двух записях.
+In 1931 the CIE defined a way to express any color as numbers — from the averaged
+response of the eye of 17 observers with normal vision. In the `xyY` notation: `x, y`
+give hue and saturation, `Y` gives luminance. `xyY` and `XYZ` are the same data in two
+notations.
 
-### Соответствие адрес → `xyY`
+### Address → `xyY` correspondence
 
-renotation (40 наблюдателей, ~3 000 000 оценок, 1940–1943) приписал каждому адресу
-Манселла его конкретное значение `xyY`:
+The renotation (40 observers, ~3,000,000 judgments, 1940–1943) assigned each Munsell
+address its concrete `xyY` value:
 
 ```
 5R 4/2    →   x 0.3508   y 0.3200   Y 12.0
@@ -62,217 +66,220 @@ renotation (40 наблюдателей, ~3 000 000 оценок, 1940–1943) �
 5R 4/18   →   x 0.6329   y 0.2881   Y 12.0
 ```
 
-С ростом насыщенности `x` растёт. Таблица целиком — файл `real.dat`, 2734 строки.
+As chroma grows, `x` grows. The full table is the file `real.dat`, 2734 rows.
 
-renotation не менял адреса: `5R 4/14` остался `5R 4/14`. Он приписал адресам числа
-`xyY` и слегка сдвинул их положение для равномерности шагов. Адрес — от Манселла,
-число `xyY` — от renotation.
+The renotation did not change the addresses: `5R 4/14` stayed `5R 4/14`. It assigned the
+addresses `xyY` numbers and shifted their positions slightly for even spacing. The
+address is Munsell's, the `xyY` number is the renotation's.
 
-### Источник C — при каком свете измерены координаты
+### Illuminant C — the light under which the coordinates were measured
 
-Цвет несамосветящегося объекта зависит от освещения. Поэтому `xyY` имеет смысл только
-при указанном источнике света. renotation посчитан при **CIE Illuminant C** и
-**2° наблюдателе** — это часть определения данных, без неё `xyY` неоднозначен.
+The color of a non-self-luminous object depends on the lighting. So `xyY` only makes
+sense under a stated light source. The renotation is computed under **CIE Illuminant C**
+and the **2° observer** — this is part of the definition of the data; without it `xyY` is
+ambiguous.
 
-**Illuminant C** — стандартный источник CIE (определён в 1931, тогда же, что `XYZ`),
-имитирует усреднённый дневной свет (~6774 K). Координаты его белой точки:
+**Illuminant C** is a standard CIE source (defined in 1931, the same year as `XYZ`),
+simulating averaged daylight (~6774 K). Its white-point coordinates:
 
 ```
-x = 0.31006   y = 0.31616   (2° наблюдатель)
+x = 0.31006   y = 0.31616   (2° observer)
 ```
 
-Формально C сейчас считается устаревшим (CIE рекомендует D65), но для этих данных он
-единственно верный: renotation в нём и посчитан. Все координаты `xyY` в `all.dat` /
-`real.dat` — относительно C.
+Formally C is now considered obsolete (the CIE recommends D65), but for this data it is
+the only correct one: the renotation is computed in it. All `xyY` coordinates in
+`all.dat` / `real.dat` are relative to C.
 
-Отсюда же берётся **серая (нейтральная) ось**, которой в файлах нет: у чисто-серого
-цвета нет тона и насыщенности, его хроматичность — это ровно белая точка C
-(`x 0.31006, y 0.31616`), а `Y` задаётся светлотой (Value). То есть серые адреса
-(`N 0/` … `N 10/`) не измеряют, а вычисляют из точки C и функции Value → Y.
+The **gray (neutral) axis**, absent from the files, comes from the same point: a pure
+gray has no hue and no chroma, its chromaticity is exactly the white point C
+(`x 0.31006, y 0.31616`), and `Y` is set by value (Value). So the gray addresses
+(`N 0/` … `N 10/`) are not measured but computed from point C and a Value → Y function.
 
-## Пространство Манселла
+## Munsell's space
 
-| Дата | Событие | Краткое описание | Ист. |
+| Date | Event | Description | Src |
 | --- | --- | --- | --- |
-| 1898 | Начало работы над системой | Манселл работает с вращательным смешением цветов, купив для этого детский глобус | П |
-| 1900–1902 | Построен дневной фотометр | Несколько экземпляров прибора изготовлены в эти годы | П |
-| 1901 | Выбран десятичный круг тонов | Манселл колеблется между кругом из десяти и из трёх цветов; десятичная система принята окончательно | П |
-| 1901–1902 | Первые таблицы | Написаны по визуальной оценке в мастерской Манселла (исполнитель — г-н Лайон) | П |
-| 1903 | Попытка измерить насыщенность | Вращающиеся диски в фотометре, светлота уравнивается освещением. Метод признан неудовлетворительным и оставлен | П |
-| 1905 | ***A Color Notation*** | Система опубликована в полном виде. Заданы три независимых измерения и нотация `H V/C` | П |
-| 1910 | Предварительный атлас | Содержит два листа: A — шкала светлоты, B — шкалы насыщенности для 5 тонов | П |
-| 1912 | Шкалы насыщенности определены | До этого года окончательного решения по насыщенности не было | П |
-| 1913 | Второе издание *A Color Notation* | Под тем же названием | В |
-| 1915 | ***Atlas of the Munsell Color System*** | Полный атлас, издательство Wadsworth Howland & Company | П |
-| 1929 | ***Munsell Book of Color*** | Атлас переиздан компанией в изменённом, заново промеренном и перекалиброванном виде; отделён по названию от *Atlas* | П |
+| 1898 | Work on the system begins | Munsell works with rotary color mixing, having bought a child's globe for the purpose | P |
+| 1900–1902 | A daylight photometer is built | Several units of the instrument are made in these years | P |
+| 1901 | The decimal hue circle is chosen | Munsell wavers between a circle of ten and of three; the decimal system is finally adopted | P |
+| 1901–1902 | First charts | Painted by visual estimate in Munsell's studio (executed by a Mr. Lyon) | P |
+| 1903 | An attempt to measure chroma | Spinning disks in the photometer, value equalized by illumination. The method is judged unsatisfactory and dropped | P |
+| 1905 | ***A Color Notation*** | The system is published in full. Three independent dimensions and the `H V/C` notation are defined | P |
+| 1910 | A preliminary atlas | Contains two charts: A — the value scale, B — chroma scales for 5 hues | P |
+| 1912 | Chroma scales settled | No final decision on chroma existed before this year | P |
+| 1913 | Second edition of *A Color Notation* | Under the same title | S |
+| 1915 | ***Atlas of the Munsell Color System*** | The full atlas, publisher Wadsworth Howland & Company | P |
+| 1929 | ***Munsell Book of Color*** | The atlas re-issued by the company in an altered, re-measured and re-calibrated form; distinguished by name from the *Atlas* | P |
 
-### Что задано в 1905 году
+### What was defined in 1905
 
-Три измерения, определённые Манселлом дословно:
+The three dimensions, as Munsell defined them verbatim:
 
-- **Hue** — «качество, которым мы отличаем один цвет от другого: красный от жёлтого, зелёного, синего, пурпурного»;
-- **Value** — «качество, которым мы отличаем светлый цвет от тёмного»;
-- **Chroma** — «качество, которым мы отличаем сильный цвет от слабого».
+- **Hue** — "the quality by which we distinguish one color from another, as a red from a yellow, a green, a blue, or a purple";
+- **Value** — "the quality by which we distinguish a light color from a dark one";
+- **Chroma** — "the quality by which we distinguish a strong color from a weak one".
 
-Заявленная цель — заменить названия цветов измеримой записью. Манселл перечисляет
-«baby blue, peacock blue, Nile green, apple green, lemon yellow, straw yellow, rose
-pink, heliotrope, royal purple, Magenta, Solferino, plum и automobile» как термины,
-«передающие разным людям разные представления и совершенно не определяющие цвет», а
-про ряд «pea green, sea green, olive green, grass green, sage green, evergreen,
-invisible green» пишет, что им «нельзя доверять при заказе куска ткани».
+The stated goal was to replace color names with a measurable notation. Munsell lists
+"baby blue, peacock blue, Nile green, apple green, lemon yellow, straw yellow, rose pink,
+heliotrope, royal purple, Magenta, Solferino, plum, and automobile" as terms "conveying
+different ideas to different persons and utterly failing to define colors", and of the
+series "pea green, sea green, olive green, grass green, sage green, evergreen, invisible
+green" he writes that they "are not to be trusted in ordering a piece of cloth".
 
-## Появление колориметрической базы
+## The arrival of a colorimetric basis
 
-| Дата | Событие | Краткое описание | Ист. |
+| Date | Event | Description | Src |
 | --- | --- | --- | --- |
-| 1931 | **CIE 1931** | Восьмая сессия CIE в Кембридже: приняты пространство XYZ, двухградусный стандартный наблюдатель и стандартные источники A, B, C | В |
-| 1935 | **Пределы Мак-Адама** | MacAdam D. L., «Maximum Visual Efficiency of Colored Materials», JOSA **25**, 361–367. Задаёт границу физически воспроизводимых цветов | П |
+| 1931 | **CIE 1931** | The eighth CIE session in Cambridge: the XYZ space, the 2° standard observer and standard illuminants A, B, C are adopted | S |
+| 1935 | **MacAdam limits** | MacAdam D. L., "Maximum Visual Efficiency of Colored Materials", JOSA **25**, 361–367. Sets the boundary of physically reproducible colors | P |
 
-До 1931 года нотация `H V/C` не могла быть привязана к измеримой величине: единственным
-определением цвета оставался физический образец в атласе.
+Before 1931 the `H V/C` notation could not be tied to a measurable quantity: the only
+definition of a color remained a physical sample in the atlas.
 
-## ISCC-NBS: имена
+## ISCC-NBS: names
 
-| Дата | Событие | Краткое описание | Ист. |
+| Date | Event | Description | Src |
 | --- | --- | --- | --- |
-| 1930, 14 мая | «Color conference» в Вашингтоне | Созвана Гатеркоулом (University of Illinois College of Pharmacy) при десятилетнем пересмотре National Formulary Фармакопеи США: комитету нужны имена цветов для описания лекарств. Отправная точка всего | А |
-| 1930, 30 октября | Резолюция OSA | Исполком Optical Society of America постановляет: потребность можно закрыть созданием совместного совета обществ, связанных с описанием и спецификацией цвета | А |
-| 1931, 26 февраля | Предварительная конференция | В Museum of Science and Industry, Нью-Йорк: 47 человек, 31 делегат от 14 национальных ассоциаций. Это **ещё не основание Совета** | А |
-| 1931, 21 сентября | Образован **Inter-Society Color Council** | Решение о создании принято на первом собрании. Первый председатель — E. N. Gathercoal | А |
-| 1931 | Поставлена задача | Гатеркоул от имени US Pharmacopoeial Revision Committee ставит проблему обозначений цвета: пригодных науке, широких для промышленности, понятных публике | П |
-| 1933 | Проект системы, комитет Годлава | Committee on Measurement and Specification под председательством I. H. Godlove: годовой отчёт с рекомендованной системой обозначений, включая 20-точечное деление круга тонов. Имена — от комитета Годлава, метод определения границ — «объёмный подход» Манселла | П |
-| 1935 | Эталоны в NBS | Munsell Color Co. депонирует в NBS два набора мастер-эталонов для спектрофотометрической привязки | П |
-| 1939 | **Judd, Kelly, «Method of Designating Colors»** | J. Res. NBS **23**, RP1239 (подписано 14 июля 1939). Метод и границы. Голосованием утверждён 9 организациями-членами и рекомендован United States Pharmacopoeial Convention | П |
+| 1930, May 14 | "Color conference" in Washington | Called by Gathercoal (University of Illinois College of Pharmacy) at the decennial revision of the National Formulary of the US Pharmacopoeia: the committee needs color names to describe drugs. The starting point of everything | A |
+| 1930, Oct 30 | OSA resolution | The Optical Society of America executive resolves: the need can be met by forming a joint council of societies concerned with the description and specification of color | A |
+| 1931, Feb 26 | Preliminary conference | At the Museum of Science and Industry, New York: 47 people, 31 delegates from 14 national associations. This is **not yet the founding of the Council** | A |
+| 1931, Sep 21 | **Inter-Society Color Council** formed | The decision to form it is taken at the first meeting. First chairman — E. N. Gathercoal | A |
+| 1931 | The problem is posed | On behalf of the US Pharmacopoeial Revision Committee, Gathercoal poses the problem of color designations: usable by science, broad for industry, understood by the public | P |
+| 1933 | The system's design, Godlove's committee | The Committee on Measurement and Specification chaired by I. H. Godlove: annual report with a recommended system of designations, including a 20-point division of the hue circle. The names are from Godlove's committee, the boundary method is Munsell's "volumetric approach" | P |
+| 1935 | Master standards at NBS | The Munsell Color Co. deposits two sets of master standards at NBS for spectrophotometric anchoring | P |
+| 1939 | **Judd, Kelly, "Method of Designating Colors"** | J. Res. NBS **23**, RP1239 (signed July 14, 1939). The method and boundaries. Approved by ballot by 9 member bodies and recommended to the United States Pharmacopoeial Convention | P |
 
-**В редакции 1939 года блоков было 319** (314 хроматических + 5 нейтральных для
-чёрного, серых и белого), не 267. Нынешние 267 — это уже редакция 1955 года.
+**The 1939 edition had 319 blocks** (314 chromatic + 5 neutral for black, grays and
+white), not 267. Today's 267 is already the 1955 revision.
 
-Границы блоков 1939 года заданы в **исходных нотациях Munsell Book**, не в renotation:
-renotation тогда ещё не существовал.
+The 1939 block boundaries are given in **the original Munsell Book notations**, not in
+the renotation: the renotation did not yet exist.
 
-## Renotation: числа
+## Renotation: the numbers
 
-| Дата | Событие | Краткое описание | Ист. |
+| Date | Event | Description | Src |
 | --- | --- | --- | --- |
-| 1936, 6 апреля | «Review of the Spacing of the Munsell Colors» | Judd и Nickerson, шестистраничная записка при отчёте Годлава: предложение изучить равномерность расстановки цветов Манселла силами подкомитета | А |
-| 1937 → | Проект передан OSA | OSA относит его к своему Colorimetry Committee; образован подкомитет под председательством Sidney M. Newhall | А |
-| 1940 | Предварительный отчёт о расстановке | Первый из двух отчётов подкомитета Ньюхолла; визуальные оценки образцов *Munsell Book of Color* — вход для renotation | А/П |
-| 1943 | **Kelly, Gibson, Nickerson**, «Tristimulus Specification of the Munsell Book of Color from Spectrophotometric Measurements» | J. Res. NBS **31**, RP1549; также JOSA **33**, 355–376. Сняты спектральные кривые отражения 421 мастер-эталона Книги на спектрофотометре General Electric. Причина названа прямо: разработка ISCC-NBS «потребовала задать эталоны этой книги в фундаментальных терминах» | П |
-| 1943 | **Newhall, Nickerson, Judd**, «Final Report of the O.S.A. Subcommittee on the Spacing of the Munsell Colors» | JOSA **33**(7), 385–418. Финальный отчёт — renotation | П |
+| 1936, Apr 6 | "Review of the Spacing of the Munsell Colors" | Judd and Nickerson, a six-page memo attached to the Godlove report: a proposal to study the uniformity of Munsell's spacing via a subcommittee | A |
+| 1937 → | The project passed to the OSA | The OSA assigns it to its Colorimetry Committee; a subcommittee is formed chaired by Sidney M. Newhall | A |
+| 1940 | Preliminary spacing report | The first of the Newhall subcommittee's two reports; visual estimates of the *Munsell Book of Color* samples — the input to the renotation | A/P |
+| 1943 | **Kelly, Gibson, Nickerson**, "Tristimulus Specification of the Munsell Book of Color from Spectrophotometric Measurements" | J. Res. NBS **31**, RP1549; also JOSA **33**, 355–376. Spectral reflectance curves of 421 master standards of the Book measured on a General Electric spectrophotometer. The reason is stated outright: the development of ISCC-NBS "made it necessary to specify the master standards of this book in fundamental terms" | P |
+| 1943 | **Newhall, Nickerson, Judd**, "Final Report of the O.S.A. Subcommittee on the Spacing of the Munsell Colors" | JOSA **33**(7), 385–418. The final report — the renotation | P |
 
-Renotation — это **два отчёта**: предварительный 1940 года и финальный 1943-го.
+The renotation is **two reports**: the preliminary one of 1940 and the final one of 1943.
 
-Две работы 1943 года — **разные**: первая измеряет, что физические образцы собой
-представляют; вторая определяет, где они должны находиться.
+The two 1943 papers are **different**: the first measures what the physical samples are;
+the second defines where they should be.
 
-Из аннотации renotation дословно: получен «изменённый и расширенный солид Манселла»,
-все три измерения пересмотрены; линии постоянного тона продлены ближе к краям
-светлоты, линии постоянной насыщенности экстраполированы до пигментного максимума,
-светлота переопределена без существенного отхода от шкалы Манселла—Слоуна—Годлава.
-Цель — приблизиться к «двойному идеалу А. Г. Манселла: психологической равношаговости
-и точной применимости». Результат задан в координатах CIE при источнике **C**.
+From the renotation abstract, verbatim: a "modified and enlarged Munsell solid" is
+obtained, all three dimensions reviewed; the loci of constant hue extended closer to the
+extremes of value, the loci of constant chroma extrapolated to the pigment maximum, value
+redefined without substantial departure from the Munsell–Sloan–Godlove scale. The goal —
+to approach "A. H. Munsell's dual ideal of psychological equispacing and precise
+applicability". The result is given in CIE coordinates under illuminant **C**.
 
-## Пересмотр блоков, центроиды, уровни
+## Block revision, centroids, levels
 
-| Дата | Событие | Краткое описание | Ист. |
+| Date | Event | Description | Src |
 | --- | --- | --- | --- |
-| 1947 | Подкомитет по пересмотру границ | Назначен для пересмотра границ отчёта 1939 года (RP1239) | П |
-| 1949, июнь | Новые границы утверждены | Пересмотренные границы блоков одобрены | П |
-| 1955 | **NBS Circular 553**, Kelly и Judd | Пересмотренная система и словарь имён. **267 блоков**. Таблицы имён построены **на renotation**, а не на исходных нотациях Книги | П |
-| 1956 | **Judd, Wyszecki**, «Extension of the Munsell Renotation System to Very Dark Colors» | JOSA **46**(4), 281–284. Renotation продлён на светлоты ниже `1/0` | П |
-| 1958 | **Kelly**, «Central Notations for the Revised ISCC-NBS Color-Name Blocks» | J. Res. NBS **61**(5), 427–431. Центроиды | П |
-| 1960 | Подкомитет по образцам центроидов | Назначен для подготовки печатных образцов, представляющих центроиды | П |
-| 1961 | Merriam-Webster | Редакция 1955 года взята за основу определений цвета в издании словаря Merriam-Webster | П |
-| ок. 1963 | Появляется название «Universal Color Language» | Термин возник в обсуждениях с исполнительным секретарём Color Marketing Group | П |
-| 1965, май | **ISCC-NBS color-name charts illustrated with centroid colors** | Приложение к Circular 553: таблицы имён, напечатанные центроидными цветами | П |
-| 1965 | **Kelly, «A Universal Color Language»** | Color Engineering **3**, 16 (март–апрель). Шесть уровней точности обозначения цвета | П |
-| 1976 | **Kelly, Judd, «Color: Universal Language and Dictionary of Names»** | NBS **Special Publication 440**. Вобрал вышедший из печати Circular 553. Действующий сводный документ | П |
+| 1947 | Subcommittee for boundary revision | Appointed to revise the boundaries of the 1939 report (RP1239) | P |
+| 1949, June | New boundaries approved | The revised block boundaries are approved | P |
+| 1955 | **NBS Circular 553**, Kelly and Judd | The revised system and dictionary of names. **267 blocks**. The name charts are built **on the renotation**, not on the original Book notations | P |
+| 1956 | **Judd, Wyszecki**, "Extension of the Munsell Renotation System to Very Dark Colors" | JOSA **46**(4), 281–284. The renotation extended to values below `1/0` | P |
+| 1958 | **Kelly**, "Central Notations for the Revised ISCC-NBS Color-Name Blocks" | J. Res. NBS **61**(5), 427–431. The centroids | P |
+| 1960 | Subcommittee for centroid samples | Appointed to prepare printed samples representing the centroids | P |
+| 1961 | Merriam-Webster | The 1955 revision is taken as the basis of color definitions in the Merriam-Webster dictionary edition | P |
+| c. 1963 | The name "Universal Color Language" appears | The term arises in discussions with the executive secretary of the Color Marketing Group | P |
+| 1965, May | **ISCC-NBS color-name charts illustrated with centroid colors** | Supplement to Circular 553: the name charts printed in centroid colors | P |
+| 1965 | **Kelly, "A Universal Color Language"** | Color Engineering **3**, 16 (March–April). Six levels of color-designation precision | P |
+| 1976 | **Kelly, Judd, "Color: Universal Language and Dictionary of Names"** | NBS **Special Publication 440**. Absorbed the out-of-print Circular 553. The current consolidated document | P |
 
-### Причина пересмотра 1955 года
+### The reason for the 1955 revision
 
-Kelly в статье 1958 года пишет прямо: блоки пересмотрены, «чтобы точнее соответствовать
-практике в текстильной и других отраслях» (NBS Circular 553). Переход на renotation при
-этом зафиксирован как факт — таблицы 1955 года строятся на renotation в отличие от
-нотаций Книги 1939 года, — но как *причина* пересмотра не заявлен. Это два разных
-утверждения, и склеивать их нельзя.
+Kelly, in his 1958 paper, states outright: the blocks were revised "to accord more
+closely with usage in the textile and other fields" (NBS Circular 553). The move to the
+renotation is recorded there as a fact — the 1955 charts are built on the renotation, unlike
+the 1939 Book notations — but is not stated as the *reason* for the revision. These are
+two different claims, and must not be conflated.
 
-## Шесть уровней Universal Color Language
+## The six levels of the Universal Color Language
 
-Таблица 1 SP 440, «Schematic Diagram Illustrating the Six Levels of The Universal
-Color Language», с. A-7.
+Table 1 of SP 440, "Schematic Diagram Illustrating the Six Levels of The Universal Color
+Language", p. A-7.
 
-| Уровень | Делений | Что это |
+| Level | Divisions | What it is |
 | --- | --- | --- |
-| 1 | 13 | Родовые имена тонов и нейтралей |
-| 2 | 29 | Все имена тонов и нейтрали |
-| 3 | 267 | Блоки ISCC-NBS с модификаторами |
-| 4 | 943–7056 | Системы цветового порядка: *Munsell Book of Color* (~1500 образцов), Maerz & Paul 1-е изд. (7056), Plochere (1248), Ridgway (1115), Color Harmony Manual 3-е изд. (943) |
-| 5 | ~100 000 | Нотация Манселла, интерполированная визуально |
-| 6 | ±5 000 000 | Координаты CIE, инструментальное измерение |
+| 1 | 13 | Generic hue and neutral names |
+| 2 | 29 | All hue names and neutrals |
+| 3 | 267 | ISCC-NBS blocks with modifiers |
+| 4 | 943–7056 | Color-order systems: *Munsell Book of Color* (~1500 samples), Maerz & Paul 1st ed. (7056), Plochere (1248), Ridgway (1115), Color Harmony Manual 3rd ed. (943) |
+| 5 | ~100,000 | Munsell notation, visually interpolated |
+| 6 | ±5,000,000 | CIE coordinates, instrumental measurement |
 
-Уровней **шесть**. Седьмой в SP 440 упомянут только как возможность: язык «обладает
-открытой гибкостью, чтобы добавить уровень 7, когда потребуется ещё более точное
-обозначение», и там же допускаются промежуточные уровни вида 2B или 2C между вторым и
-третьим. Ни уровень 7, ни промежуточные не определены.
+There are **six** levels. A seventh is mentioned in SP 440 only as a possibility: the
+language "has the open-ended flexibility to add level 7 when a still more accurate
+designation of color is needed", and intermediate levels like 2B or 2C between the second
+and third are allowed there too. Neither level 7 nor the intermediate ones are defined.
 
-Словарь имён в SP 440 сводит 7500 названий цветов из 11 наборов материальных эталонов.
+The dictionary of names in SP 440 collates 7500 color names from 11 sets of material
+standards.
 
-## Что чем является
+## What is what
 
-| Слой | Кто | Год | Содержание |
+| Layer | Who | Year | Content |
 | --- | --- | --- | --- |
-| Оси, круг тонов, нотация `H V/C`, физические образцы | Манселл | 1905–1915 | Порядковые адреса, не колориметрия |
-| Спектрофотометрия эталонов Книги | Kelly, Gibson, Nickerson | 1943 | Чем физически являются 421 образец |
-| Renotation | Newhall, Nickerson, Judd | 1943 | Где адреса должны находиться; координаты xyY, источник C |
-| Блоки и имена | комитет Годлава; Judd, Kelly | 1933 → 1939, ред. 1955 | Области пространства и их названия (319 блоков в 1939, 267 с 1955) |
-| Центроиды блоков | Kelly | 1958 | Объёмно-взвешенный центр области |
-| Уровни точности | Kelly | 1965 | Шесть уровней UCL |
+| Axes, hue circle, `H V/C` notation, physical samples | Munsell | 1905–1915 | Ordinal addresses, not colorimetry |
+| Spectrophotometry of the Book's standards | Kelly, Gibson, Nickerson | 1943 | What the 421 samples physically are |
+| Renotation | Newhall, Nickerson, Judd | 1943 | Where the addresses should be; `xyY` coordinates, illuminant C |
+| Blocks and names | Godlove's committee; Judd, Kelly | 1933 → 1939, rev. 1955 | Regions of the space and their names (319 blocks in 1939, 267 since 1955) |
+| Block centroids | Kelly | 1958 | Volume-weighted center of a region |
+| Levels of precision | Kelly | 1965 | The six UCL levels |
 
-Нотация `H V/C` — числовая, но не колориметрическая: `5R 4/14` раскладывается на числа,
-однако это порядковые позиции в шкале, заданной физическим образцом. Вычислить из
-адреса отражённый свет нельзя без внешней таблицы соответствия.
+The `H V/C` notation is numeric but not colorimetric: `5R 4/14` decomposes into numbers,
+but those are ordinal positions on a scale defined by a physical sample. You cannot
+compute the reflected light from the address without an external correspondence table.
 
-## Машинно доступные наборы
+## Machine-readable datasets
 
-Renotation-данные Munsell Color Science Laboratory, RIT. Формат у всех трёх одинаков:
-тон Манселла, светлота, насыщенность, CIE `x`, `y`, `Y`. Координаты рассчитаны при
-источнике **C** и двухградусном наблюдателе CIE 1931.
+Renotation data from the Munsell Color Science Laboratory, RIT. The format of all three
+is identical: Munsell hue, value, chroma, CIE `x`, `y`, `Y`. Coordinates are computed
+under illuminant **C** and the CIE 1931 2° observer.
 
-| Файл | Строк | Содержание |
+| File | Rows | Content |
 | --- | --- | --- |
-| `all.dat` | 4995 | Все данные, включая экстраполированные; часть цветов нереальна |
-| `real.dat` | 2734 | Только реальные — лежащие внутри пределов Мак-Адама. Соответствуют перечню статьи renotation 1943 года |
-| `1929.dat` | — | Только цвета, физически присутствующие в *Munsell Book of Color* 1929 года. Это входные образцы экспериментов по шкалированию для renotation |
+| `all.dat` | 4995 | All data, including extrapolated; some colors are unreal |
+| `real.dat` | 2734 | Real only — lying inside the MacAdam limits. Correspond to the list in the 1943 renotation paper |
+| `1929.dat` | — | Only colors physically present in the *Munsell Book of Color* of 1929. These are the input samples of the scaling experiments for the renotation |
 
-`1929.dat` — ближайшее к «данным Манселла», что существует в машинном виде: адреса
-физических образцов его Книги. Координаты у них всё равно renotation-овские.
+`1929.dat` is the closest thing to "Munsell's data" that exists in machine form: the
+addresses of the physical samples of his Book. Their coordinates are still the
+renotation's.
 
-Сетка `real.dat`: 10 семейств тонов, шаги 2.5 / 5 / 7.5 / 10 — итого 40 тонов; светлота
-целая `1..9`; насыщенность чётная `2..38`.
+The `real.dat` grid: 10 hue families, steps 2.5 / 5 / 7.5 / 10 — 40 hues in all; value
+integer `1..9`; chroma even `2..38`.
 
-## Спорное и непроверенное
+## Disputed and unverified
 
-- **Когда число тонов выросло с 20 до 40.** Немецкая Wikipedia относит удвоение к
-  renotation 1943 года. Часть источников относит его к «примерно 1950» и к самой
-  *Book of Color* как продукту. Достоверно установлено одно: **набор данных renotation
-  1943 года содержит 40 шагов тона**. Про физический атлас — не проверено.
-- **1898 как год начала работы.** У Никерсон есть фраза про вращательное смешение в
-  1898, но это не то же самое, что «начал систему».
-- **Год перехода к принципу равношаговости.** Ранее я датировал его 1904 годом; в
-  истории Никерсон подтверждения этой дате не нашлось. Утверждение снято.
-- **CIE 1931** подтверждён только вторичными источниками; официальный документ CIE
-  не смотрел.
-- **Даты Манселла 1898–1929** взяты из «History of the Munsell Color System»
-  Никерсон (JOSA 30, 1940). Отдельный трёхчастный очерк Никерсон 1976 года
-  (*Color Research & Application* 1) достать не удалось — именно там подробности о
-  переходе Книги с 20 на 40 листов тонов.
+- **When the number of hues grew from 20 to 40.** German Wikipedia attributes the doubling
+  to the 1943 renotation. Some sources attribute it to "around 1950" and to the
+  *Book of Color* as a product. Only one thing is firmly established: **the 1943
+  renotation dataset contains 40 hue steps**. About the physical atlas — unverified.
+- **1898 as the year work began.** Nickerson has a phrase about rotary mixing in 1898,
+  but that is not the same as "began the system".
+- **The year of the switch to the equal-spacing principle.** I previously dated it to
+  1904; no confirmation of that date was found in Nickerson's history. The claim is retracted.
+- **CIE 1931** is confirmed only by secondary sources; I have not seen the official CIE
+  document.
+- **Munsell's dates 1898–1929** are taken from Nickerson's "History of the Munsell Color
+  System" (JOSA 30, 1940). The separate three-part Nickerson essay of 1976
+  (*Color Research & Application* 1) could not be obtained — that is where the details of
+  the Book's transition from 20 to 40 hue charts are.
 
-## Источники
+## Sources
 
-Первоисточники:
+Primary sources:
 
-- [Kelly, Judd. Color: Universal Language and Dictionary of Names. NBS SP 440, 1976 — полный текст](https://archive.org/stream/coloruniversalla00kell/coloruniversalla00kell_djvu.txt)
-- [Munsell A. H. A Color Notation, 1905 — полный текст](https://www.gutenberg.org/files/26054/26054-h/26054-h.htm)
+- [Kelly, Judd. Color: Universal Language and Dictionary of Names. NBS SP 440, 1976 — full text](https://archive.org/stream/coloruniversalla00kell/coloruniversalla00kell_djvu.txt)
+- [Munsell A. H. A Color Notation, 1905 — full text](https://www.gutenberg.org/files/26054/26054-h/26054-h.htm)
 - [Nickerson D. History of the Munsell Color System. JOSA 30(12)](https://en.wikisource.org/wiki/Journal_of_the_Optical_Society_of_America/Volume_30/Issue_12/History_of_the_Munsell_Color_System)
 - [Newhall, Nickerson, Judd. Final Report of the O.S.A. Subcommittee. JOSA 33(7), 385 (1943)](https://opg.optica.org/josa/abstract.cfm?uri=josa-33-7-385)
 - [Kelly, Gibson, Nickerson. Tristimulus Specification of the Munsell Book of Color. RP1549 (1943)](https://en.wikisource.org/wiki/Tristimulus_Specification_of_the_Munsell_Book_of_Color_From_Spectrophotometric_Measurements)
@@ -282,19 +289,19 @@ Renotation-данные Munsell Color Science Laboratory, RIT. Формат у �
 - [Judd, Wyszecki. Extension of the Munsell Renotation System to Very Dark Colors. JOSA 46(4), 281 (1956)](https://www.osapublishing.org/abstract.cfm?uri=josa-46-4-281)
 - [NBS Circular 553, 1955](https://archive.org/details/circularofbureau553unse)
 
-Прочитаны целиком. Две публикации NBS — работы правительства США, общественное
-достояние — лежат в [`sources/`](sources/):
+Read in full. Two NBS publications — works of the US government, public domain — are kept
+in [`sources/`](sources/):
 
-- [`judd-kelly-1939-rp1239.pdf`](sources/judd-kelly-1939-rp1239.pdf) — Judd, Kelly. Method of Designating Colors. J. Res. NBS 23, RP1239 (1939). Взято с [nvlpubs.nist.gov](https://nvlpubs.nist.gov/nistpubs/jres/23/jresv23n3p355_A1b.pdf)
-- [`kelly-1958-central-notations.pdf`](sources/kelly-1958-central-notations.pdf) — Kelly. Central Notations for the Revised ISCC-NBS Color-Name Blocks. J. Res. NBS 61(5), 427 (1958). Взято с [nvlpubs.nist.gov](https://nvlpubs.nist.gov/nistpubs/jres/61/jresv61n5p427_A1b.pdf)
+- [`judd-kelly-1939-rp1239.pdf`](sources/judd-kelly-1939-rp1239.pdf) — Judd, Kelly. Method of Designating Colors. J. Res. NBS 23, RP1239 (1939). Taken from [nvlpubs.nist.gov](https://nvlpubs.nist.gov/nistpubs/jres/23/jresv23n3p355_A1b.pdf)
+- [`kelly-1958-central-notations.pdf`](sources/kelly-1958-central-notations.pdf) — Kelly. Central Notations for the Revised ISCC-NBS Color-Name Blocks. J. Res. NBS 61(5), 427 (1958). Taken from [nvlpubs.nist.gov](https://nvlpubs.nist.gov/nistpubs/jres/61/jresv61n5p427_A1b.pdf)
 
-Третий первоисточник тоже прочитан целиком, но **в репозиторий не включён** (авторские
-права ISCC): Carter E. *Color in Art, Science, and Industry* — история ISCC (по ISCC
-News #247, 1977). Доступен на [iscc.org](https://iscc.org/History).
+A third primary source was also read in full but is **not included in the repository**
+(ISCC copyright): Carter E. *Color in Art, Science, and Industry* — a history of the ISCC
+(after ISCC News #247, 1977). Available at [iscc.org](https://iscc.org/History).
 
-Данные и институциональные источники:
+Data and institutional sources:
 
-- [Munsell Color Science Laboratory, RIT — renotation-данные](https://www.rit.edu/science/munsell-color-science-lab-educational-resources)
-- [Inter-Society Color Council — история](https://iscc.org/History)
+- [Munsell Color Science Laboratory, RIT — renotation data](https://www.rit.edu/science/munsell-color-science-lab-educational-resources)
+- [Inter-Society Color Council — history](https://iscc.org/History)
 - [ISCC-NBS color-name charts illustrated with centroid colors, 1965 — Smithsonian](https://www.si.edu/object/siris_sil_909259)
-- [bstreiff/iscc-nbs-colors — транскрипция SP 440, CC0-1.0](https://github.com/bstreiff/iscc-nbs-colors)
+- [bstreiff/iscc-nbs-colors — transcription of SP 440, CC0-1.0](https://github.com/bstreiff/iscc-nbs-colors)
