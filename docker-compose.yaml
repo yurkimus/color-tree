@@ -1,0 +1,18 @@
+services:
+  database:
+    image: neo4j
+    volumes:
+      - ./database/data:/data
+      - ./database/logs:/logs
+      - ./database/conf:/conf
+      - ./database/plugins:/plugins
+      - ./database/licenses:/licenses
+      - ./database/import:/import
+      - ./database/ssl:/ssl
+      - ./database/metrics:/metrics
+    ports:
+      - 7474:7474
+      - 7687:7687
+    environment:
+      - NEO4J_AUTH=$NEO4J_USER/$NEO4J_PASSWORD
+    restart: unless-stopped
