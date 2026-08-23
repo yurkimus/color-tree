@@ -90,10 +90,20 @@ Formally C is now considered obsolete (the CIE recommends D65), but for this dat
 the only correct one: the renotation is computed in it. All `xyY` coordinates in
 `all.dat` / `real.dat` are relative to C.
 
-The **gray (neutral) axis**, absent from the files, comes from the same point: a pure
-gray has no hue and no chroma, its chromaticity is exactly the white point C
-(`x 0.31006, y 0.31616`), and `Y` is set by value (Value). So the gray addresses
-(`N 0/` … `N 10/`) are not measured but computed from point C and a Value → Y function.
+The **gray (neutral) axis** is absent from the files, because it is not measured but
+**computed** — and this layer is now seeded (see `migrations/`). A pure gray has no hue
+and no chroma, so its chromaticity is exactly the white point C (`x 0.31006, y 0.31616`),
+and its `Y` is set by value alone. `Y` comes from the Newhall–Nickerson–Judd (1943)
+quintic, standardized as ASTM D1535:
+
+```
+Y = 1.2219·V − 0.23111·V² + 0.23951·V³ − 0.021009·V⁴ + 0.0008404·V⁵
+```
+
+This polynomial reproduces the `Y` column of `all.dat` exactly (`Y` there depends only on
+value), so instead of recomputing it the neutral seed reuses `all.dat`'s own per-value
+`Y` — the gray points then sit on the same value planes as the chromatic grid. The axis
+uses the same 14 values as `all.dat` (`N 0.2/` … `N 10/`), `hueFamily = "N"`, `chroma = 0`.
 
 ## Munsell's space
 
