@@ -267,6 +267,30 @@ renotation's.
 The `real.dat` grid: 10 hue families, steps 2.5 / 5 / 7.5 / 10 — 40 hues in all; value
 integer `1..9`; chroma even `2..38`.
 
+## The name layer (graph)
+
+Alongside the coordinate layer, the ISCC-NBS names are loaded as their own taxonomy:
+
+- `:ColorBlock:ISCCBlock` — a level-3 region (267).
+- `:ColorCategory:ISCCCategory {level}` — the level-2 (29) and level-1 (13) groupings.
+- `:ColorDesignation {value, abbr}` — the name itself (294 distinct; names that recur
+  across levels — `Pink`, `White`, `Black` … — collapse to one node).
+- `-[:SUBSET_OF]->` builds the taxonomy (block ⊆ level-2 ⊆ level-1, 296 edges).
+- `-[:HAS_DESIGNATION]->` attaches each of the 309 regions to its name.
+
+The naming is source-grounded: **`ColorDesignation`** from Kelly & Judd's *Method of
+Designating Colors* (1939); the atomic words a name decomposes into (base + modifiers)
+will be **`ColorTerm`**, from Berlin & Kay's *basic color terms* (1969).
+
+Data: `sources/iscc-nbs.xml` (transcription of NBS SP 440 by bstreiff, CC0-1.0), parsed by
+`scripts/iscc-names.js` into `database/import/iscc-names.csv`, loaded by the `iscc-names`
+migration.
+
+Deferred to separate later steps: decomposing names into `ColorTerm`
+(base / hue-modifier / tone-modifier); the blocks' Munsell geometry (`H/V/C` boundaries +
+centroid); linking each coordinate point to its block by geometric containment
+(`-[:ELEMENT_OF]->`).
+
 ## Disputed and unverified
 
 - **When the number of hues grew from 20 to 40.** German Wikipedia attributes the doubling

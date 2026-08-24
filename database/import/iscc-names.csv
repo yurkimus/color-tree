@@ -1,0 +1,310 @@
+level,number,name,abbr,parent
+1,1,Pink,Pk,
+2,1,Pink,Pk,1
+3,1,Vivid pink,viv.Pk,1
+3,2,Strong pink,s.Pk,1
+3,3,Deep pink,dp.Pk,1
+3,4,Light pink,l.Pk,1
+3,5,Moderate pink,m.Pk,1
+3,6,Dark pink,d.Pk,1
+3,7,Pale pink,p.Pk,1
+3,8,Grayish pink,gy.Pk,1
+3,9,Pinkish white,pkWh,1
+3,10,Pinkish gray,pkGy,1
+2,3,Yellowish pink,yPk,1
+3,25,Vivid yellowish pink,viv.yPk,3
+3,26,Strong yellowish pink,s.yPk,3
+3,27,Deep yellowish pink,dp.yPk,3
+3,28,Light yellowish pink,l.yPk,3
+3,29,Moderate yellowish pink,m.yPk,3
+3,30,Dark yellowish pink,d.yPk,3
+3,31,Pale yellowish pink,p.yPk,3
+3,32,Grayish yellowish pink,gy.yPk,3
+3,33,Brownish pink,brPk,3
+2,25,Purplish pink,pPk,1
+3,246,Brilliant purplish pink,brill.pPk,25
+3,247,Strong purplish pink,s.pPk,25
+3,248,Deep purplish pink,dp.pPk,25
+3,249,Light purplish pink,l.pPk,25
+3,250,Moderate purplish pink,m.pPk,25
+3,251,Dark purplish pink,d.pPk,25
+3,252,Pale purplish pink,p.pPk,25
+3,253,Grayish purplish pink,gy.pPk,25
+1,2,Red,R,
+2,2,Red,R,2
+3,11,Vivid red,viv.R,2
+3,12,Strong red,s.R,2
+3,13,Deep red,dp.R,2
+3,14,Very deep red,v.dp.R,2
+3,15,Moderate red,m.R,2
+3,16,Dark red,d.R,2
+3,17,Very dark red,v.d.R,2
+3,18,Light grayish red,l.gy.R,2
+3,19,Grayish red,gy.R,2
+3,20,Dark grayish red,d.gy.R,2
+3,21,Blackish red,bkR,2
+3,22,Reddish gray,rGy,2
+3,23,Dark reddish gray,d.rGy,2
+3,24,Reddish black,rBk,2
+2,26,Purplish red,pR,2
+3,254,Vivid purplish red,viv.pR,26
+3,255,Strong purplish red,s.pR,26
+3,256,Deep purplish red,dp.pR,26
+3,257,Very deep purplish red,v.dp.pR,26
+3,258,Moderate purplish red,m.pR,26
+3,259,Dark purplish red,d.pR,26
+3,260,Very dark purplish red,v.d.pR,26
+3,261,Light grayish purplish red,l.gy.pR,26
+3,262,Grayish purplish red,gy.pR,26
+1,3,Orange,O,
+2,4,Reddish orange,rO,3
+3,34,Vivid reddish orange,viv.rO,4
+3,35,Strong reddish orange,s.rO,4
+3,36,Deep reddish orange,dp.rO,4
+3,37,Moderate reddish orange,m.rO,4
+3,38,Dark reddish orange,d.rO,4
+3,39,Grayish reddish orange,gy.rO,4
+2,6,Orange,O,3
+3,48,Vivid orange,viv.O,6
+3,49,Brilliant orange,brill.O,6
+3,50,Strong orange,s.O,6
+3,51,Deep orange,dp.O,6
+3,52,Light orange,l.O,6
+3,53,Moderate orange,m.O,6
+3,54,Brownish orange,brO,6
+1,4,Brown,Br,
+2,5,Reddish brown,rBr,4
+3,40,Strong reddish brown,s.rBr,5
+3,41,Deep reddish brown,dp.rBr,5
+3,42,Light reddish brown,l.rBr,5
+3,43,Moderate reddish brown,m.rBr,5
+3,44,Dark reddish brown,d.rBr,5
+3,45,Light grayish reddish brown,l.gy.rBr,5
+3,46,Grayish reddish brown,gy.rBr,5
+3,47,Dark grayish reddish brown,d.gy.rBr,5
+2,7,Brown,Br,4
+3,55,Strong brown,s.Br,7
+3,56,Deep brown,dp.Br,7
+3,57,Light brown,l.Br,7
+3,58,Moderate brown,m.Br,7
+3,59,Dark brown,d.Br,7
+3,60,Light grayish brown,l.gy.Br,7
+3,61,Grayish brown,gy.Br,7
+3,62,Dark grayish brown,d.gy.Br,7
+3,63,Light brownish gray,l.brGy,7
+3,64,Brownish gray,brGy,7
+3,65,Brownish black,brBk,7
+2,9,Yellowish brown,yBr,4
+3,74,Strong yellowish brown,s.yBr,9
+3,75,Deep yellowish brown,dp.yBr,9
+3,76,Light yellowish brown,l.yBr,9
+3,77,Moderate yellowish brown,m.yBr,9
+3,78,Dark yellowish brown,d.yBr,9
+3,79,Light grayish yellowish brown,l.gy.yBr,9
+3,80,Grayish yellowish brown,gy.yBr,9
+3,81,Dark grayish yellowish brown,d.gy.yBr,9
+1,5,Yellow,Y,
+2,8,Orange yellow,OY,5
+3,66,Vivid orange yellow,viv.OY,8
+3,67,Brilliant orange yellow,brill.OY,8
+3,68,Strong orange yellow,s.OY,8
+3,69,Deep orange yellow,dp.OY,8
+3,70,Light orange yellow,l.OY,8
+3,71,Moderate orange yellow,m.OY,8
+3,72,Dark orange yellow,d.OY,8
+3,73,Pale orange yellow,p.OY,8
+2,10,Yellow,Y,5
+3,82,Vivid yellow,viv.Y,10
+3,83,Brilliant yellow,brill.Y,10
+3,84,Strong yellow,s.Y,10
+3,85,Deep yellow,dp.Y,10
+3,86,Light yellow,l.Y,10
+3,87,Moderate yellow,m.Y,10
+3,88,Dark yellow,d.Y,10
+3,89,Pale yellow,p.Y,10
+3,90,Grayish yellow,gy.Y,10
+3,91,Dark grayish yellow,d.gy.Y,10
+3,92,Yellowish white,yWh,10
+3,93,Yellowish gray,yGy,10
+2,12,Greenish yellow,gY,5
+3,97,Vivid greenish yellow,viv.gY,12
+3,98,Brilliant greenish yellow,brill.gY,12
+3,99,Strong greenish yellow,s.gY,12
+3,100,Deep greenish yellow,dp.gY,12
+3,101,Light greenish yellow,l.gY,12
+3,102,Moderate greenish yellow,m.gY,12
+3,103,Dark greenish yellow,d.gY,12
+3,104,Pale greenish yellow,p.gY,12
+3,105,Grayish greenish yellow,gy.gY,12
+1,6,Olive,Ol,
+2,11,Olive brown,OlBr,6
+3,94,Light olive brown,l.OlBr,11
+3,95,Moderate olive brown,m.OlBr,11
+3,96,Dark olive brown,d.OlBr,11
+2,13,Olive,Ol,6
+3,106,Light olive,l.Ol,13
+3,107,Moderate olive,m.Ol,13
+3,108,Dark olive,d.Ol,13
+3,109,Light grayish olive,l.gy.Ol,13
+3,110,Grayish olive,gy.Ol,13
+3,111,Dark grayish olive,d.gy.Ol,13
+3,112,Light olive gray,l.OlGy,13
+3,113,Olive gray,OlGy,13
+3,114,Olive black,OlBk,13
+2,15,Olive green,OlG,6
+3,123,Strong olive green,s.OlG,15
+3,124,Deep olive green,dp.OlG,15
+3,125,Moderate olive green,m.OlG,15
+3,126,Dark olive green,d.OlG,15
+3,127,Grayish olive green,gy.OlG,15
+3,128,Dark grayish olive green,d.gy.OlG,15
+1,7,Yellow green,YG,
+2,14,Yellow green,YG,7
+3,115,Vivid yellow green,viv.YG,14
+3,116,Brilliant yellow green,brill.YG,14
+3,117,Strong yellow green,s.YG,14
+3,118,Deep yellow green,d.YG,14
+3,119,Light yellow green,l.YG,14
+3,120,Moderate yellow green,m.YG,14
+3,121,Pale yellow green,p.YG,14
+3,122,Grayish yellow green,gy.YG,14
+1,8,Green,G,
+2,16,Yellowish green,yG,8
+3,129,Vivid yellowish green,viv.yG,16
+3,130,Brilliant yellowish green,brill.yG,16
+3,131,Strong yellowish green,s.yG,16
+3,132,Deep yellowish green,dp.yG,16
+3,133,Very deep yellowish green,v.dp.yG,16
+3,134,Very light yellowish green,v.l.yG,16
+3,135,Light yellowish green,l.yG,16
+3,136,Moderate yellowish green,m.yG,16
+3,137,Dark yellowish green,d.yG,16
+3,138,Very dark yellowish green,v.d.yG,16
+2,17,Green,G,8
+3,139,Vivid green,viv.G,17
+3,140,Brilliant green,brill.G,17
+3,141,Strong green,s.G,17
+3,142,Deep green,dp.G,17
+3,143,Very light green,v.l.G,17
+3,144,Light green,l.G,17
+3,145,Moderate green,m.G,17
+3,146,Dark green,d.G,17
+3,147,Very dark green,v.d.G,17
+3,148,Very pale green,v.p.G,17
+3,149,Pale green,p.G,17
+3,150,Grayish green,gy.G,17
+3,151,Dark grayish green,d.gy.G,17
+3,152,Blackish green,bk.G,17
+3,153,Greenish white,gWh,17
+3,154,Light greenish gray,l.gGy,17
+3,155,Greenish gray,gGy,17
+3,156,Dark greenish gray,d.gGy,17
+3,157,Greenish black,gBk,17
+2,18,Bluish green,bG,8
+3,158,Vivid bluish green,viv.bG,18
+3,159,Brilliant bluish green,brill.bG,18
+3,160,Strong bluish green,s.bG,18
+3,161,Deep bluish green,dp.bG,18
+3,162,Very light bluish green,v.l.bG,18
+3,163,Light bluish green,l.bG,18
+3,164,Moderate bluish green,m.bG,18
+3,165,Dark bluish green,d.bG,18
+3,166,Very dark bluish green,v.d.bG,18
+1,9,Blue,B,
+2,19,Greenish blue,gB,9
+3,167,Vivid greenish blue,viv.gB,19
+3,168,Brilliant greenish blue,brill.gB,19
+3,169,Strong greenish blue,s.gB,19
+3,170,Deep greenish blue,dp.gB,19
+3,171,Very light greenish blue,v.l.gB,19
+3,172,Light greenish blue,l.gB,19
+3,173,Moderate greenish blue,m.gB,19
+3,174,Dark greenish blue,d.gB,19
+3,175,Very dark greenish blue,v.d.gB,19
+2,20,Blue,B,9
+3,176,Vivid blue,viv.B,20
+3,177,Brilliant blue,brill.B,20
+3,178,Strong blue,s.B,20
+3,179,Deep blue,dp.B,20
+3,180,Very light blue,v.l.B,20
+3,181,Light blue,l.B,20
+3,182,Moderate blue,m.B,20
+3,183,Dark blue,d.B,20
+3,184,Very pale blue,v.p.B,20
+3,185,Pale blue,p.B,20
+3,186,Grayish blue,gy.B,20
+3,187,Dark grayish blue,d.gy.B,20
+3,188,Blackish blue,bkB,20
+3,189,Bluish white,bWh,20
+3,190,Light bluish gray,l.bGy,20
+3,191,Bluish gray,bGy,20
+3,192,Dark bluish gray,d.bGy,20
+3,193,Bluish black,bBk,20
+2,21,Purplish blue,pB,9
+3,194,Vivid purplish blue,viv.pB,21
+3,195,Brilliant purplish blue,brill.pB,21
+3,196,Strong purplish blue,s.pB,21
+3,197,Deep purplish blue,dp.pB,21
+3,198,Very light purplish blue,v.l.pB,21
+3,199,Light purplish blue,l.pB,21
+3,200,Moderate purplish blue,m.pB,21
+3,201,Dark purplish blue,d.pB,21
+3,202,Very pale purplish blue,v.p.pB,21
+3,203,Pale purplish blue,p.pB,21
+3,204,Grayish purplish blue,gy.pB,21
+1,10,Purple,P,
+2,22,Violet,V,10
+3,205,Vivid violet,viv.V,22
+3,206,Brilliant violet,brill.V,22
+3,207,Strong violet,s.V,22
+3,208,Deep violet,dp.V,22
+3,209,Very light violet,v.l.V,22
+3,210,Light violet,l.V,22
+3,211,Moderate violet,m.V,22
+3,212,Dark violet,d.V,22
+3,213,Very pale violet,v.p.V,22
+3,214,Pale violet,p.V,22
+3,215,Grayish violet,gy.V,22
+2,23,Purple,P,10
+3,216,Vivid purple,viv.P,23
+3,217,Brilliant purple,brill.P,23
+3,218,Strong purple,s.P,23
+3,219,Deep purple,dp.P,23
+3,220,Very deep purple,v.dp.P,23
+3,221,Very light purple,v.l.P,23
+3,222,Light purple,l.P,23
+3,223,Moderate purple,m.P,23
+3,224,Dark purple,d.P,23
+3,225,Very dark purple,v.d.P,23
+3,226,Very pale purple,v.p.P,23
+3,227,Pale purple,p.P,23
+3,228,Grayish purple,gy.P,23
+3,229,Dark grayish purple,d.gy.P,23
+3,230,Blackish purple,bk.P,23
+3,231,Purplish white,pWh,23
+3,232,Light purplish gray,l.pGy,23
+3,233,Purplish gray,pGy,23
+3,234,Dark purplish gray,d.pGy,23
+3,235,Purplish black,pBk,23
+2,24,Reddish purple,rP,10
+3,236,Vivid reddish purple,viv.rP,24
+3,237,Strong reddish purple,s.rP,24
+3,238,Deep reddish purple,dp.rP,24
+3,239,Very deep reddish purple,v.dp.rP,24
+3,240,Light reddish purple,l.rP,24
+3,241,Moderate reddish purple,m.rP,24
+3,242,Dark reddish purple,d.rP,24
+3,243,Very dark reddish purple,v.d.rP,24
+3,244,Pale reddish purple,p.rP,24
+3,245,Grayish reddish purple,gy.rP,24
+1,11,White,Wh,
+2,27,White,Wh,11
+3,263,White,Wh,27
+1,12,Gray,Gy,
+2,28,Gray,Gy,12
+3,264,Light gray,l.Gy,28
+3,265,Medium gray,m.Gy,28
+3,266,Dark gray,d.Gy,28
+1,13,Black,Bk,
+2,29,Black,Bk,13
+3,267,Black,Bk,29
